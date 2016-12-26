@@ -27,3 +27,11 @@ To build the entire tool-chain, run the following commands:
 mkdir /tmp/lfs
 docker run --rm -v /tmp/lfs/lfs:/mnt/lfs tlyngej/lfs-toolchain-builder:7.9
 ```
+
+## I'm done compiling the "stuff". What's next?
+What you have just compiled is what you need to compile the actual LFS
+base system. This is an even longer process of more compiling. But there is also
+a Docker image that can handle that for you.
+
+Head over to this [GitHub repository](https://github.com/TLyngeJ/lfs-base-system)
+to read more about how to finish build the rest.
