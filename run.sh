@@ -61,105 +61,116 @@ echo "* Now, for building daz toolchain! *"
 echo "************************************"
 echo
 # 5.4. Binutils-2.26 - Pass 1
-echo "Building: 5.4. Binutils-2.26 - Pass 1"
+echo "Building: 5.4. Binutils-2.26 - Pass 1 (30 packages left)"
 sh /scripts/binutils-2.26.sh > /scripts/logs/binutils-2.26 2>&1
 # 5.5. GCC-5.3.0 - Pass 1
-echo "Building: 5.5. GCC-5.3.0 - Pass 1"
+echo "Building: 5.5. GCC-5.3.0 - Pass 1 (29 packages left)"
 sh /scripts/gcc-5.3.0.sh > /scripts/logs/gcc-5.3.0 2>&1
 # 5.6. Linux-4.4.2 API Headers
-echo "Building: 5.6. Linux-4.4.2 API Headers"
+echo "Building: 5.6. Linux-4.4.2 API Headers (28 packages left)"
 sh /scripts/linux-4.4.2.sh > /scripts/logs/linux-4.4.2 2>&1
 # 5.7. Glibc-2.23
-echo "Building: 5.7. Glibc-2.23"
+echo "Building: 5.7. Glibc-2.23 (27 packages left)"
 sh /scripts/glibc-2.23.sh > /scripts/logs/glibc-2.23 2>&1
 # 5.8. Libstdc++-5.3.0
-echo "Building: 5.8. Libstdc++-5.3.0"
+echo "Building: 5.8. Libstdc++-5.3.0 (26 packages left)"
 sh /scripts/libstdc++-5.3.0.sh > /scripts/logs/libstdc++-5.3.0 2>&1
 # 5.9. Binutils-2.26 - Pass 2
-echo "Building: 5.9. Binutils-2.26 - Pass 2"
+echo "Building: 5.9. Binutils-2.26 - Pass 2 (25 packages left)"
 sh /scripts/binutils-2.26-pass2.sh > /scripts/logs/binutils-2.26-pass2 2>&1
 # 5.10. GCC-5.3.0 - Pass 2
-echo "Building: 5.10. GCC-5.3.0 - Pass 2"
+echo "Building: 5.10. GCC-5.3.0 - Pass 2 (24 packages left)"
 sh /scripts/gcc-5.3.0-pass2.sh > /scripts/logs/gcc-5.3.0-pass2 2>&1
 # 5.11. Tcl-core-8.6.4
-echo "Building: 5.11. Tcl-core-8.6.4"
+echo "Building: 5.11. Tcl-core-8.6.4 (23 packages left)"
 sh /scripts/tcl-core8.6.4.sh > /scripts/logs/tcl-core8.6.4 2>&1
 # 5.12. Expect-5.45
-echo "Building: 5.12. Expect-5.45"
+echo "Building: 5.12. Expect-5.45 (22 packages left)"
 sh /scripts/expect5.45.sh > /scripts/logs/expect5.45 2>&1
 # 5.13. DejaGNU-1.5.3
-echo "Building: 5.13. DejaGNU-1.5.3"
+echo "Building: 5.13. DejaGNU-1.5.3 (21 packages left)"
 sh /scripts/dejagnu-1.5.3.sh > /scripts/logs/dejagnu-1.5.3 2>&1
 # 5.14. Check-0.10.0
-echo "Building: 5.14. Check-0.10.0"
+echo "Building: 5.14. Check-0.10.0 (20 packages left)"
 sh /scripts/check-0.10.0.sh > /scripts/logs/check-0.10.0 2>&1
 # 5.15. Ncurses-6.0
-echo "Building: 5.15. Ncurses-6.0"
+echo "Building: 5.15. Ncurses-6.0 (19 packages left)"
 sh /scripts/ncurses-6.0.sh > /scripts/logs/ncurses-6.0 2>&1
 # 5.16. Bash-4.3.30
-echo "Building: 5.16. Bash-4.3.30"
+echo "Building: 5.16. Bash-4.3.30 (18 packages left)"
 sh /scripts/bash-4.3.30.sh > /scripts/logs/bash-4.3.30 2>&1
 # 5.17. Bzip2-1.0.6
-echo "Building: 5.17. Bzip2-1.0.6"
+echo "Building: 5.17. Bzip2-1.0.6 (17 packages left)"
 sh /scripts/bzip2-1.0.6.sh > /scripts/logs/bzip2-1.0.6 2>&1
 # 5.18. Coreutils-8.25
-echo "Building: 5.18. Coreutils-8.25"
+echo "Building: 5.18. Coreutils-8.25 (16 packages left)"
 sh /scripts/coreutils-8.25.sh > /scripts/logs/coreutils-8.25 2>&1
 # 5.19. Diffutils-3.3
-echo "Building: 5.19. Diffutils-3.3"
+echo "Building: 5.19. Diffutils-3.3 (15 packages left)"
 sh /scripts/diffutils-3.3.sh > /scripts/logs/diffutils-3.3 2>&1
 # 5.20. File-5.25
-echo "Building: 5.20. File-5.25"
+echo "Building: 5.20. File-5.25 (14 packages left)"
 sh /scripts/file-5.25.sh > /scripts/logs/file-5.25 2>&1
 # 5.21. Findutils-4.6.0
-echo "Building: 5.21. Findutils-4.6.0"
+echo "Building: 5.21. Findutils-4.6.0 (13 packages left)"
 sh /scripts/findutils-4.6.0.sh > /scripts/logs/findutils-4.6.0 2>&1
 # 5.22. Gawk-4.1.3
-echo "Building: 5.22. Gawk-4.1.3"
+echo "Building: 5.22. Gawk-4.1.3 (12 packages left)"
 sh /scripts/gawk-4.1.3.sh > /scripts/logs/gawk-4.1.3 2>&1
 # 5.23. Gettext-0.19.7
-echo "Building: 5.23. Gettext-0.19.7"
+echo "Building: 5.23. Gettext-0.19.7 (11 packages left)"
 sh /scripts/gettext-0.19.7.sh > /scripts/logs/gettext-0.19.7 2>&1
 # 5.24. Grep-2.23
-echo "Building: 5.24. Grep-2.23"
+echo "Building: 5.24. Grep-2.23 (10 packages left)"
 sh /scripts/grep-2.23.sh > /scripts/logs/grep-2.23 2>&1
 # 5.25. Gzip-1.6
-echo "Building: 5.25. Gzip-1.6"
+echo "Building: 5.25. Gzip-1.6 (9 packages left)"
 sh /scripts/gzip-1.6.sh > /scripts/logs/gzip-1.6 2>&1
 # 5.26. M4-1.4.17
-echo "Building: 5.26. M4-1.4.17"
+echo "Building: 5.26. M4-1.4.17 (8 packages left)"
 sh /scripts/m4-1.4.17.sh > /scripts/logs/m4-1.4.17 2>&1
 # 5.27. Make-4.1
-echo "Building: 5.27. Make-4.1"
+echo "Building: 5.27. Make-4.1 (7 packages left)"
 sh /scripts/make-4.1.sh > /scripts/logs/make-4.1 2>&1
 # 5.28. Patch-2.7.5
-echo "Building: 5.28. Patch-2.7.5"
+echo "Building: 5.28. Patch-2.7.5 (6 packages left)"
 sh /scripts/patch-2.7.5.sh > /scripts/logs/patch-2.7.5 2>&1
 # 5.29. Perl-5.22.1
-echo "Building: 5.29. Perl-5.22.1"
+echo "Building: 5.29. Perl-5.22.1 (5 packages left)"
 sh /scripts/perl-5.22.1.sh > /scripts/logs/perl-5.22.1 2>&1
 # 5.30. Sed-4.2.2
-echo "Building: 5.30. Sed-4.2.2"
+echo "Building: 5.30. Sed-4.2.2 (4 packages left)"
 sh /scripts/sed-4.2.2.sh > /scripts/logs/sed-4.2.2 2>&1
 # 5.30. 5.31. Tar-1.28
-echo "Building: 5.31. Tar-1.28"
+echo "Building: 5.31. Tar-1.28 (3 packages left)"
 sh /scripts/tar-1.28.sh > /scripts/logs/tar-1.28 2>&1
 # 5.32. Texinfo-6.1
-echo "Building: 5.32. Texinfo-6.1"
+echo "Building: 5.32. Texinfo-6.1 (2 packages left)"
 sh /scripts/texinfo-6.1.sh > /scripts/logs/texinfo-6.1 2>&1
 # 5.33. Util-linux-2.27.1
-echo "Building: 5.33. Util-linux-2.27.1"
+echo "Building: 5.33. Util-linux-2.27.1 (1 package left)"
 sh /scripts/util-linux-2.27.1.sh > /scripts/logs/util-linux-2.27.1 2>&1
 # 5.34. Xz-5.2.2
-echo "Building: 5.34. Xz-5.2.2"
+echo "Building: 5.34. Xz-5.2.2 (last package)"
 sh /scripts/xz-5.2.2.sh > /scripts/logs/xz-5.2.2 2>&1
 
 echo
-echo "************************************"
-echo "* Stripping                        *"
-echo "* (But you can leave your hat on!) *"
-echo "************************************"
+echo "**************************************"
+echo "* Stripping                          *"
+echo "* (But you can leave your hat on!)   *"
+echo "* It is safe to ignore any warnings. *"
+echo "**************************************"
 echo
 strip --strip-debug /tools/lib/*
 /usr/bin/strip --strip-unneeded /tools/{,s}bin/*
 rm -rf /tools/{,share}/{info,man,doc}
+
+echo
+echo "****************************************************"
+echo "* Tool chain has not been build.                   *"
+echo "* You can now build the base Linux                 *"
+echo "* From Scratch base syste.                         *"
+echo "* Visit https://github.com/TLyngeJ/lfs-base-system *"
+echo "* for more info.                                   *"
+echo "****************************************************"
+echo
