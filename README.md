@@ -16,7 +16,7 @@ the system, installed, will handle the build through a series of scripts.
 ## Build the Docker image, used as the container (optional).
 To build the Docker image, that will used in the container, you can issue this
 command. You can also skip this step an use the pre-build image provided by me
-on the [Docker Hub][git@github.com:TLyngeJ/lfs-base-system.git].
+on the [Docker Hub](https://hub.docker.com/r/tlyngej/lfs-toolchain-builder/).
 ```
 docker build -t tlyngej/lfs-toolchain-builder .
 ```
@@ -25,5 +25,5 @@ docker build -t tlyngej/lfs-toolchain-builder .
 To build the entire tool-chain, run the following commands:
 ```
 mkdir /tmp/lfs
-docker run --rm -v /tmp/lfs/lfs:/mnt/lfs tlyngej/lfs-toolchain-builder
+docker run --rm -v /tmp/lfs/lfs:/mnt/lfs tlyngej/lfs-toolchain-builder:7.9
 ```
