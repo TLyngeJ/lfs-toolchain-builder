@@ -11,6 +11,7 @@ if [[ ! -d $LFS/sources ]]; then
   echo
   mkdir -v $LFS/sources
   chmod -v a+wt $LFS/sources
+  echo "Downloading source files. This might take a while depending on your internet connection speed"
   cat /scripts/wget-list | xargs -n 1 -P 20 wget --continue --directory-prefix=$LFS/sources > /dev/null 2>&1
 
   # Verify we have all of the source files.
