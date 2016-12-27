@@ -167,7 +167,7 @@ rm -rf /tools/{,share}/{info,man,doc}
 
 echo
 echo "****************************************************"
-echo "* Tool chain has not been build.                   *"
+echo "* Tool chain has now been build.                   *"
 echo "* You can now build the base Linux                 *"
 echo "* From Scratch base syste.                         *"
 echo "* Visit https://github.com/TLyngeJ/lfs-base-system *"
