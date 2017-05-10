@@ -1,5 +1,5 @@
 #!/bin/bash
-# 5.21. Findutils-4.6.0
+# 5.22. Findutils-4.6.0
 set -e
 cd $LFS/sources
 rm -rf findutils-4.6.0

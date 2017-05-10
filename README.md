@@ -25,7 +25,7 @@ docker build -t tlyngej/lfs-toolchain-builder .
 To build the entire tool-chain, run the following commands:
 ```
 mkdir /tmp/lfs
-docker run --rm -v /tmp/lfs/lfs:/mnt/lfs tlyngej/lfs-toolchain-builder:7.9
+docker run --rm -v /tmp/lfs/lfs:/mnt/lfs tlyngej/lfs-toolchain-builder:8.0
 ```
 
 ## I'm done compiling the "stuff". What's next?

@@ -1,10 +1,10 @@
 #!/bin/bash
-# 5.11. Tcl-core-8.6.4
+# 5.11. Tcl-core-8.6.6
 set -e
 cd $LFS/sources
-rm -rf tcl8.6.4
-tar xf tcl-core8.6.4-src.tar.gz
-cd tcl8.6.4
+rm -rf tcl8.6.6
+tar xf tcl-core8.6.6-src.tar.gz
+cd tcl8.6.6
 
 cd unix
 ./configure --prefix=/tools
@@ -15,4 +15,4 @@ make install-private-headers
 ln -sv tclsh8.6 /tools/bin/tclsh
 
 cd $LFS/sources
-rm -rf tcl8.6.4
+rm -rf tcl8.6.6

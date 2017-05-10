@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.24. Grep-2.23
+# 5.23. Gawk-4.1.4
 set -e
 cd $LFS/sources
-rm -rf grep-2.23
-tar xf grep-2.23.tar.xz
-cd grep-2.23
+rm -rf gawk-4.1.4
+tar xf gawk-4.1.4.tar.xz
+cd gawk-4.1.4
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf grep-2.23
+rm -rf gawk-4.1.4

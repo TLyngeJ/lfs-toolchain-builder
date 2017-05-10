@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.30. Sed-4.2.2
+# 5.21. File-5.30
 set -e
 cd $LFS/sources
-rm -rf sed-4.2.2
-tar xf sed-4.2.2.tar.bz2
-cd sed-4.2.2
+rm -rf file-5.30
+tar xf file-5.30.tar.gz
+cd file-5.30
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf sed-4.2.2
+rm -rf file-5.30

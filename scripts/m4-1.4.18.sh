@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.32. Texinfo-6.1
+# 5.27. M4-1.4.18
 set -e
 cd $LFS/sources
-rm -rf texinfo-6.1
-tar xf texinfo-6.1.tar.xz
-cd texinfo-6.1
+rm -rf m4-1.4.18
+tar xf m4-1.4.18.tar.xz
+cd m4-1.4.18
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf texinfo-6.1
+rm -rf m4-1.4.18

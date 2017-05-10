@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.26. M4-1.4.17
+# 5.17. Bison-3.0.4
 set -e
 cd $LFS/sources
-rm -rf m4-1.4.17
-tar xf m4-1.4.17.tar.xz
-cd m4-1.4.17
+rm -rf bison-3.0.4
+tar xf bison-3.0.4.tar.xz
+cd bison-3.0.4
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf m4-1.4.17
+rm -rf bison-3.0.4

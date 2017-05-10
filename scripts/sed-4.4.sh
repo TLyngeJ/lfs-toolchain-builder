@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.29. Patch-2.7.5
+# 5.31. Sed-4.4
 set -e
 cd $LFS/sources
-rm -rf patch-2.7.5
-tar xf patch-2.7.5.tar.xz
-cd patch-2.7.5
+rm -rf sed-4.4
+tar xf sed-4.4.tar.xz
+cd sed-4.4
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf patch-2.7.5
+rm -rf sed-4.4

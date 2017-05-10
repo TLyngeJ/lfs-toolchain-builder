@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.22. Gawk-4.1.3
+# 5.26. Gzip-1.8
 set -e
 cd $LFS/sources
-rm -rf gawk-4.1.3
-tar xf gawk-4.1.3.tar.xz
-cd gawk-4.1.3
+rm -rf gzip-1.8
+tar xf gzip-1.8.tar.xz
+cd gzip-1.8
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf gawk-4.1.3
+rm -rf gzip-1.8

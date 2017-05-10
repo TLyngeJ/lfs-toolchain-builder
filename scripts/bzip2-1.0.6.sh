@@ -1,5 +1,5 @@
 #!/bin/bash
-# 5.17. Bzip2-1.0.6
+# 5.18. Bzip2-1.0.6
 set -e
 cd $LFS/sources
 rm -rf bzip2-1.0.6

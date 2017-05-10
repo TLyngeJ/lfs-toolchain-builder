@@ -1,19 +1,18 @@
 #!/bin/bash
-# 5.5. GCC-5.3.0 - Pass 1
+# 5.5. GCC-6.3.0 - Pass 1
 set -e
 cd $LFS/sources
-rm -rf gcc-5.3.0
-tar xf gcc-5.3.0.tar.bz2
-cd gcc-5.3.0
+rm -rf gcc-6.3.0
+tar xf gcc-6.3.0.tar.bz2
+cd gcc-6.3.0
 
-tar -xf ../mpfr-3.1.3.tar.xz
-mv -v mpfr-3.1.3 mpfr
-tar -xf ../gmp-6.1.0.tar.xz
-mv -v gmp-6.1.0 gmp
+tar -xf ../mpfr-3.1.5.tar.xz
+mv -v mpfr-3.1.5 mpfr
+tar -xf ../gmp-6.1.2.tar.xz
+mv -v gmp-6.1.2 gmp
 tar -xf ../mpc-1.0.3.tar.gz
 mv -v mpc-1.0.3 mpc
-for file in \
- $(find gcc/config -name linux64.h -o -name linux.h -o -name sysv4.h)
+for file in gcc/config/{linux,i386/linux{,64}}.h
 do
   cp -uv $file{,.orig}
   sed -e 's@/lib\(64\)\?\(32\)\?/ld@/tools&@g' \
@@ -25,6 +24,12 @@ do
 #define STANDARD_STARTFILE_PREFIX_2 ""' >> $file
   touch $file.orig
 done
+case $(uname -m) in
+  x86_64)
+    sed -e '/m64=/s/lib64/lib/' \
+        -i.orig gcc/config/i386/t-linux64
+ ;;
+esac
 mkdir -v build
 cd       build
 ../configure                                       \
@@ -43,6 +48,7 @@ cd       build
     --disable-threads                              \
     --disable-libatomic                            \
     --disable-libgomp                              \
+    --disable-libmpx                               \
     --disable-libquadmath                          \
     --disable-libssp                               \
     --disable-libvtv                               \
@@ -52,4 +58,4 @@ make
 make install
 
 cd $LFS/sources
-rm -rf gcc-5.3.0
+rm -rf gcc-6.3.0
