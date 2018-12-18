@@ -1,17 +1,17 @@
 #!/bin/bash
-# 5.5. GCC-6.3.0 - Pass 1
+# 5.5. GCC-8.2.0 - Pass 1
 set -e
 cd $LFS/sources
-rm -rf gcc-6.3.0
-tar xf gcc-6.3.0.tar.bz2
-cd gcc-6.3.0
+rm -rf gcc-8.2.0
+tar xf gcc-8.2.0.tar.xz
+cd gcc-8.2.0
 
-tar -xf ../mpfr-3.1.5.tar.xz
-mv -v mpfr-3.1.5 mpfr
+tar -xf ../mpfr-4.0.1.tar.xz
+mv -v mpfr-4.0.1 mpfr
 tar -xf ../gmp-6.1.2.tar.xz
 mv -v gmp-6.1.2 gmp
-tar -xf ../mpc-1.0.3.tar.gz
-mv -v mpc-1.0.3 mpc
+tar -xf ../mpc-1.1.0.tar.gz
+mv -v mpc-1.1.0 mpc
 for file in gcc/config/{linux,i386/linux{,64}}.h
 do
   cp -uv $file{,.orig}
@@ -58,4 +58,4 @@ make
 make install
 
 cd $LFS/sources
-rm -rf gcc-6.3.0
+rm -rf gcc-8.2.0

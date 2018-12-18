@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.33. Texinfo-6.3
+# 5.30. Sed-4.5
 set -e
 cd $LFS/sources
-rm -rf texinfo-6.3
-tar xf texinfo-6.3.tar.xz
-cd texinfo-6.3
+rm -rf sed-4.5
+tar xf sed-4.5.tar.xz
+cd sed-4.5
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf texinfo-6.3
+rm -rf sed-4.5

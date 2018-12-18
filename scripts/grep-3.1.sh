@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.29. Patch-2.7.5
+# 5.25. Grep-3.1
 set -e
 cd $LFS/sources
-rm -rf patch-2.7.5
-tar xf patch-2.7.5.tar.xz
-cd patch-2.7.5
+rm -rf grep-3.1
+tar xf grep-3.1.tar.xz
+cd grep-3.1
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf patch-2.7.5
+rm -rf grep-3.1

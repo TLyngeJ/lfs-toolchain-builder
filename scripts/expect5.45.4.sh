@@ -1,10 +1,10 @@
 #!/bin/bash
-# 5.12. Expect-5.45
+# 5.12. Expect-5.45.4
 set -e
 cd $LFS/sources
-rm -rf expect5.45
-tar xf expect5.45.tar.gz
-cd expect5.45
+rm -rf expect5.45.4
+tar xf expect5.45.4.tar.gz
+cd expect5.45.4
 
 cp -v configure{,.orig}
 sed 's:/usr/local/bin:/bin:' configure.orig > configure
@@ -12,7 +12,8 @@ sed 's:/usr/local/bin:/bin:' configure.orig > configure
             --with-tcl=/tools/lib \
             --with-tclinclude=/tools/include
 make
+make install
 make SCRIPTS="" install
 
 cd $LFS/sources
-rm -rf expect5.45
+rm -rf expect5.45.4

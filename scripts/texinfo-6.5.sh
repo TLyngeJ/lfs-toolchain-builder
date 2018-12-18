@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.26. Gzip-1.8
+# 5.32. Texinfo-6.5
 set -e
 cd $LFS/sources
-rm -rf gzip-1.8
-tar xf gzip-1.8.tar.xz
-cd gzip-1.8
+rm -rf texinfo-6.5
+tar xf texinfo-6.5.tar.xz
+cd texinfo-6.5
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf gzip-1.8
+rm -rf texinfo-6.5

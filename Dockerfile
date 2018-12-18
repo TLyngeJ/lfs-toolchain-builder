@@ -1,5 +1,5 @@
 # Image for building a LFS toolchain.
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 MAINTAINER tlyngej@gmail.com
 
 RUN apt-get update

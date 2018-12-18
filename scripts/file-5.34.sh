@@ -1,14 +1,14 @@
 #!/bin/bash
-# 5.25. Grep-3.0
+# 5.21. File-5.34
 set -e
 cd $LFS/sources
-rm -rf grep-3.0
-tar xf grep-3.0.tar.xz
-cd grep-3.0
+rm -rf file-5.34
+tar xf file-5.34.tar.gz
+cd file-5.34
 
 ./configure --prefix=/tools
 make
 make install
 
 cd $LFS/sources
-rm -rf grep-3.0
+rm -rf file-5.34
