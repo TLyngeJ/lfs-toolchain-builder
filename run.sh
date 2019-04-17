@@ -45,7 +45,7 @@ export LFS LC_ALL LFS_TGT PATH
 EOF
 
 source ~/.bashrc
-export MAKEFLAGS='-j 7'
+export MAKEFLAGS='-j'
 
 # Check host requirements are met.
 # http://www.linuxfromscratch.org/lfs/view/stable/prologue/hostreqs.html

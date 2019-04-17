@@ -18,7 +18,7 @@ To build the Docker image, that will used in the container, you can issue this
 command. You can also skip this step an use the pre-build image provided by me
 on the [Docker Hub](https://hub.docker.com/r/tlyngej/lfs-toolchain-builder/).
 ```
-docker build -t tlyngej/lfs-toolchain-builder .
+docker build -t tlyngej/lfs-toolchain-builder:8.3 .
 ```
 
 ## Compile the tool-chain.
